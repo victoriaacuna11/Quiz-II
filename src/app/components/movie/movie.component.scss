@@ -1,0 +1,16 @@
+.info-movie{
+    display: none;
+    :hover{
+        display: grid;
+        grid-template-rows: 0.5fr 0.25fr 0.25fr;
+    }
+}
+.img{
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+}
+
+.title-wrapper{
+    
+}

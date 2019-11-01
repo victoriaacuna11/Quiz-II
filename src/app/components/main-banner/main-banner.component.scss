@@ -1,0 +1,32 @@
+.img-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("https://searchengineland.com/figz/wp-content/seloads/2017/06/movie-popcorn-video-ss-1920.jpg");
+    position: relative;
+}
+
+.title-wrapper{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 45px;
+}
+
+.background-clr{
+    position: absolute;
+    top:0%;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    color: white;
+}

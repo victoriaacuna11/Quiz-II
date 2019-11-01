@@ -1,0 +1,10 @@
+
+.cartelera{
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+}
+
+.movies-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
