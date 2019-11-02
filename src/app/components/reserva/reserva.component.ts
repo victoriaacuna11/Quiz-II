@@ -42,7 +42,7 @@ export class ReservaComponent implements OnInit {
     this.getMovie();
     this.movieID = this._route.snapshot.paramMap.get('movieID');
   }
-  enviar(value){
+  enviar(){
 
     // const movie={
     //   name: this.name,
