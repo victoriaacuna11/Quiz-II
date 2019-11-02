@@ -14,6 +14,7 @@
     opacity: 0;
     display: grid;
     grid-template-rows: 0.5fr 0.25fr 0.25fr;
+    padding: 5%;
     
     &:hover{
         background-color: rgba(0, 0, 0, 0.7);
@@ -39,23 +40,16 @@
     text-align: center;
 }
 
-.movie-genre{
+.detail-wrapper{
+    padding: 5%;
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.movie-languages{
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.movie{
 
-}
 
