@@ -1,0 +1,45 @@
+<div class="background">
+    <div class="form-wrapper">
+        <div class="title-wrapper">
+            {{movie.Title | uppercase }}
+        </div>
+        <div class="detail-wrapper">
+            AVAILABLE SEATS <br>
+            {{movie.seats}}
+        </div>
+        <div class="form">
+            <form [formGroup]="form">
+                <div class="details">
+                    <div class="detail-wrapper">
+                        <label >NAME: </label>
+                        <br>
+                        <input formControlName="name" type="text" />
+                    </div>
+                    <div class="detail-wrapper">
+                        <label>LAST NAME: </label>
+                        <input formControlName="lastname" type="text" />
+                    </div>
+                    <div class="detail-wrapper">
+                        <label>PHONE NUMBER: </label>
+                        <input formControlName="phonenumber" type="string" />
+                    </div>
+                    <div class="detail-wrapper">
+                        <label>EMAIL </label>
+                        <input formControlName="email" type="email" />
+                    </div>
+                    <div class="detail-wrapper">
+                        <label>CARD NUMBER: </label>
+                        <input formControlName="cardnumber" type="text" />
+                    </div>
+                    <div class="detail-wrapper">
+                        <label>SEATS: </label>
+                        <input formControlName="seats" type="number" />
+                    </div>
+                    <div class="button">
+                        <button [disabled]="form.invalid" type="submit">BUY TICKETS</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

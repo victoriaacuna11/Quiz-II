@@ -35,7 +35,7 @@
                             {{movie.Genre}}
                         </div>
                         <div class="detail-wrapper">
-                            DIRECTORS<br>
+                            DIRECTOR<br>
                             {{movie.Director}}
                         </div>
                         <div class="detail-wrapper">
@@ -52,7 +52,7 @@
                             COMING SOON
                         </button>
                         <button  *ngIf="movie.Available && movie.seats>0">
-                            Reservar
+                            BUY TICKETS
                         </button>
                         <button  *ngIf="movie.Available && 1>movie.seats" disabled>
                             NOT AVAILABLE

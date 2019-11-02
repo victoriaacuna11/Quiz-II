@@ -12,6 +12,9 @@ import { AvailablePipe } from './pipes/available.pipe';
 import { NotAvailablePipe } from './pipes/not-available.pipe';
 import { InfoMovieComponent } from './components/info-movie/info-movie.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ReservaComponent } from './components/reserva/reserva.component';
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,12 +26,14 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     TitleHomeComponent,
     AvailablePipe,
     NotAvailablePipe,
-    InfoMovieComponent
+    InfoMovieComponent,
+    ReservaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
