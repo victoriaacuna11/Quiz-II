@@ -1,0 +1,91 @@
+.background{
+    // background-image: url("https://images.cdn3.stockunlimited.net/preview1300/cinema-background-with-movie-objects_1823381.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.background-clr{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.info-wrapper{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img-wrapper{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.info{
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+ }
+ .clr{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    // background-color: black;
+    // opacity: 0.8;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+ }
+
+ .info-movie{
+    display: grid;
+    grid-template-rows: 0.2fr 0.3fr 0.2fr 0.1fr 0.1fr 0.1fr;
+ }
+
+ .detail-wrapper{
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color:white;
+     padding: 5px;
+     font-family: 'PT Sans Narrow', sans-serif;
+ }
+
+ .title-wrapper{
+     font-size: 30px;
+     color:white;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Staatliches', cursive;
+
+ }
+
+ .details-wrapper{
+     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+ }
+ #plot{
+     text-align: justify;
+ }

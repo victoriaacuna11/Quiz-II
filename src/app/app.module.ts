@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { TitleHomeComponent } from './components/title-home/title-home.component';
 import { AvailablePipe } from './pipes/available.pipe';
 import { NotAvailablePipe } from './pipes/not-available.pipe';
+import { InfoMovieComponent } from './components/info-movie/info-movie.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { NotAvailablePipe } from './pipes/not-available.pipe';
     HomeComponent,
     TitleHomeComponent,
     AvailablePipe,
-    NotAvailablePipe
+    NotAvailablePipe,
+    InfoMovieComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

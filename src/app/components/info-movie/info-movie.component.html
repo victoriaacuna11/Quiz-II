@@ -1,0 +1,53 @@
+<div class="background" [ngStyle]="{'background-image': 'url('+movie.Poster+')'}">
+    <div class="background-clr">
+    </div>
+    <div class="info-wrapper">
+            <div class="img-wrapper">
+                <div class="slider">
+                    <carousel class="carousel">
+                        <slide *ngFor="let img of movie.Images">
+                            <img [src]="img" style="display: block; width: 100%">
+                        </slide>
+                    </carousel>
+                </div>
+            </div>
+            <div class="info">
+                <div class="clr">
+                    <div class="title-wrapper">
+                        {{movie.Title | uppercase}}
+                    </div>
+                    <div class="info-movie">
+                        <div class="detail-wrapper" id="plot">
+                            {{movie.Plot}}
+                        </div>
+                        <div class="details-wrapper">
+                            <div class="detail-wrapper">
+                                RUN TIME<br>
+                                {{movie.Runtime}}
+                            </div>
+                            <div class="detail-wrapper">
+                                YEAR<br>
+                                {{movie.Year}}
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            GENRE<br>
+                            {{movie.Genre}}
+                        </div>
+                        <div class="detail-wrapper">
+                            DIRECTORS<br>
+                            {{movie.Director}}
+                        </div>
+                        <div class="detail-wrapper">
+                            ACTORS<br>
+                            {{movie.Actors}}
+                        </div>
+                        <div class="detail-wrapper">
+                            AWARDS<br>
+                            {{movie.Awards}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
