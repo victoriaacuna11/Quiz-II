@@ -12,21 +12,29 @@ export class ReservaComponent implements OnInit {
 
   movie: Movie;
   form: FormGroup;
+  name:string;
+  lastname:string;
+  phonenumber:string;
+  email:string;
+  cardnumber:string;
+  seats:number;
 
   constructor(private _sv: MoviesServiceService, 
     private builder: FormBuilder) { 
       this.form=this.builder.group({
-        name:[''],
-        lastname:[''],
-        phonenumber:[''],
-        email:['', Validators.compose([Validators.email, Validators.required])], 
-        cardnumber:['', Validators.required],
-        seats: ['', Validators.required]
+        name:[null,Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
+        lastname:[null,Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
+        phonenumber:[null,Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
+        email:[null, Validators.compose([Validators.email, Validators.required, Validators.minLength(30), Validators.maxLength(500)])], 
+        cardnumber:[null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
+        seats: [null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])]
       });
     }
 
   ngOnInit() {
     this.movie=this._sv.getMovie();
   }
-
+  enviar(values){
+    console.log(values);
+  }
 }

@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     position: relative;
     padding: 7%;
 }
@@ -15,19 +15,25 @@
     left: 50%;
     transform: translate(-50%,-50%);
     width: 30vw;
-    height: 80vh;
+    height: 120vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-rows: 0.2fr 0.1fr 0.7fr;
 }
 
 .detail-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
+    label{
+        color: white;
+        height: 70%;
+    }
     // background-color: yellow;
 }
 
@@ -60,8 +66,25 @@ form{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background:none;
+    button{
+        width: 50%;
+        height: 80%;
+        color: white;
+        border: 1px solid white;
+        background:none;
+    }
 }
-button{
-    width: 50%;
-    height: 80%;
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+input{
+    text-align: center;
 }

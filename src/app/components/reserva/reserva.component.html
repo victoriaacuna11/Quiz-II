@@ -3,37 +3,60 @@
         <div class="title-wrapper">
             {{movie.Title | uppercase }}
         </div>
-        <div class="detail-wrapper">
+        <div class="wrapper">
             AVAILABLE SEATS <br>
             {{movie.seats}}
         </div>
         <div class="form">
-            <form [formGroup]="form">
+            <form [formGroup]="form" (ngSubmit)="enviar(form.value)">
                 <div class="details">
                     <div class="detail-wrapper">
-                        <label >NAME: </label>
-                        <br>
-                        <input formControlName="name" type="text" />
+                        <div class="wrapper">
+                            NAME
+                        </div> 
+                        <div class="wrapper">
+                            <input formControlName="name" type="text" />
+                        </div>
                     </div>
                     <div class="detail-wrapper">
-                        <label>LAST NAME: </label>
-                        <input formControlName="lastname" type="text" />
+                        <div class="wrapper">
+                            LAST NAME:
+                        </div>
+                        <div class="wrapper">
+                            <input formControlName="lastname" type="text" />
+                        </div>
                     </div>
                     <div class="detail-wrapper">
-                        <label>PHONE NUMBER: </label>
-                        <input formControlName="phonenumber" type="string" />
+                        <div class="wrapper">
+                            PHONE NUMBER:
+                        </div>
+                        <div class="wrapper">
+                            <input formControlName="phonenumber" type="text" />
+                        </div>
                     </div>
                     <div class="detail-wrapper">
-                        <label>EMAIL </label>
-                        <input formControlName="email" type="email" />
+                        <div class="wrapper">
+                            EMAIL
+                        </div>
+                        <div class="wrapper">
+                            <input formControlName="email" type="email" />
+                        </div>
                     </div>
                     <div class="detail-wrapper">
-                        <label>CARD NUMBER: </label>
-                        <input formControlName="cardnumber" type="text" />
+                        <div class="wrapper">
+                            CARD NUMBER:
+                        </div>
+                        <div class="wrapper">
+                            <input formControlName="cardnumber" type="text" />
+                        </div>
                     </div>
                     <div class="detail-wrapper">
-                        <label>SEATS: </label>
-                        <input formControlName="seats" type="number" />
+                        <div class="wrapper">
+                            SEATS
+                        </div>
+                        <div class="wrapper">
+                            <input formControlName="seats" type="number" min="1" max="{{movie.seats}}"/>
+                        </div>
                     </div>
                     <div class="button">
                         <button [disabled]="form.invalid" type="submit">BUY TICKETS</button>
