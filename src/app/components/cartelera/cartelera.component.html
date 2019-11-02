@@ -1,9 +1,20 @@
-<div class="cartelera">
+<div *ngIf="available" class="cartelera">
     <div class="sep"></div>
     <div class="movies-wrapper"> 
-        <div class="movie" *ngFor="let m of movies">
+        <div class="movie" *ngFor="let m of movies | available">
             <app-movie [onemovie]="m"></app-movie>
         </div>
     </div>
     <div class="sep"></div>
 </div>
+
+<div *ngIf="!available" class="cartelera">
+    <div class="sep"></div>
+    <div class="movies-wrapper"> 
+            <div class="movie" *ngFor="let m of movies | notAvailable">
+                    <app-movie [onemovie]="m"></app-movie>
+            </div>
+    </div>
+    <div class="sep"></div>
+</div>
+

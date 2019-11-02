@@ -9,10 +9,11 @@ import {Movie} from '../../models/movie';
 export class CarteleraComponent implements OnInit {
 
   movies: Movie[];
+  @Input() available:boolean;
 
   constructor(private _sv: MoviesServiceService) { }
 
   ngOnInit() {
-    this.movies = this._sv.getMovies();
+    this.movies=this._sv.getMovies();
   }
 }

@@ -49,7 +49,7 @@ export class MoviesServiceService {
       "Awards": "9 wins & 21 nominations.",
       "Poster": "https://upload.wikimedia.org/wikipedia/en/d/df/I_am_legend_teaser.jpg",
       "Available": true,
-      "ComingSoon":false,
+      "ComingSoon": false,
       "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0NTI4NjE3NV5BMl5BanBnXkFtZTYwMDA0Nzc4._V1_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTIwMDg2MDU4M15BMl5BanBnXkFtZTYwMTA0Nzc4._V1_.jpg",
@@ -74,7 +74,7 @@ export class MoviesServiceService {
       "Awards": "16 wins & 42 nominations.",
       "Poster": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
       "Available": true,
-      "ComingSoon":false,
+      "ComingSoon": false,
       "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNTg5MzMwMV5BMl5BanBnXkFtZTcwMzA2NTIyMw@@._V1_SX1777_CR0,0,1777,937_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQwNTgyNTMzNF5BMl5BanBnXkFtZTcwNDA2NTIyMw@@._V1_SX1777_CR0,0,1777,935_AL_.jpg",
@@ -98,7 +98,7 @@ export class MoviesServiceService {
       "Awards": "Nominated for 1 Oscar. Another 34 wins & 75 nominations.",
       "Poster": "https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg",
       "Available": true,
-      "ComingSoon":false,
+      "ComingSoon": false,
       "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MzEzMjcyM15BMl5BanBnXkFtZTcwNDM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -274,5 +274,7 @@ export class MoviesServiceService {
   getMovie(){
     return this.movie;
   }
+
+  
 
 }

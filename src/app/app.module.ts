@@ -7,6 +7,9 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { HomeComponent } from './components/home/home.component';
+import { TitleHomeComponent } from './components/title-home/title-home.component';
+import { AvailablePipe } from './pipes/available.pipe';
+import { NotAvailablePipe } from './pipes/not-available.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HomeComponent } from './components/home/home.component';
     MainBannerComponent,
     CarteleraComponent,
     MovieComponent,
-    HomeComponent
+    HomeComponent,
+    TitleHomeComponent,
+    AvailablePipe,
+    NotAvailablePipe
   ],
   imports: [
     BrowserModule,
