@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 130vh;
+    height: 150vh;
     position: relative;
     padding: 7%;
 }
@@ -15,7 +15,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     width: 30vw;
-    height: 120vh;
+    height: 140vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-rows: 0.2fr 0.1fr 0.7fr;
@@ -48,7 +48,7 @@
 }
 .details{
     display: grid;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     width: 100%;
     height: 100%;
 }
@@ -67,7 +67,7 @@ form{
     justify-content: center;
     text-align: center;
     background:none;
-    button{
+    input{
         width: 50%;
         height: 80%;
         color: white;

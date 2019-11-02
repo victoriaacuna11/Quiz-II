@@ -8,7 +8,6 @@
     position: absolute;
     left: 0%;
     top: 0%;
-    // transform: translate(-50%, -50%);
     height: 45vh;
     width: 100%;
     opacity: 0;
@@ -32,17 +31,26 @@
 }
 
 .title-wrapper{
-    font-family: 'Staatliches', cursive;
+    h2{
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 5%;
 }
 
 .detail-wrapper{
     padding: 5%;
-    font-family: 'PT Sans Narrow', sans-serif;
+    
+    h4{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 15px;
+    }
     color: white;
     display: flex;
     align-items: center;
@@ -54,11 +62,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: none;
     button{
-        height: 80%;
+        height: 100%;
         width: 50%;
         background-color: rgba(255, 255, 255, 1);
         border:none;
+        font-family: 'PT Sans Narrow', sans-serif;
+        color: black;
+        font-family: 'PT Sans Narrow', sans-serif;
+        
         
     }
 }

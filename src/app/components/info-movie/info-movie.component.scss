@@ -37,6 +37,15 @@
    justify-content: center;
 }
 
+.slider{
+    height: 60%;
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+}
+
 .info{
     background-size: cover;
     background-position: center; 
@@ -93,6 +102,8 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     background: none;
+     font-family: 'PT Sans Narrow', sans-serif;
     //  height: 100%;
     //  width: 100%;
      button{
@@ -101,6 +112,8 @@
          background: none;
          color: white;
          border: 1px solid white;
+        //  font-family: 'PT Sans Narrow', sans-serif;
+         
          &:hover{
             color: black;
             background-color: white;

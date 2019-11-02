@@ -8,7 +8,7 @@
             {{movie.seats}}
         </div>
         <div class="form">
-            <form [formGroup]="form" (ngSubmit)="enviar(form.value)">
+            <form [formGroup]="form" (ngSubmit)="enviar()">
                 <div class="details">
                     <div class="detail-wrapper">
                         <div class="wrapper">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="detail-wrapper">
                         <div class="wrapper">
-                            LAST NAME:
+                            LAST NAME
                         </div>
                         <div class="wrapper">
                             <input formControlName="lastname" type="text" />
@@ -28,7 +28,7 @@
                     </div>
                     <div class="detail-wrapper">
                         <div class="wrapper">
-                            PHONE NUMBER:
+                            PHONE NUMBER
                         </div>
                         <div class="wrapper">
                             <input formControlName="phonenumber" type="text" />
@@ -44,7 +44,7 @@
                     </div>
                     <div class="detail-wrapper">
                         <div class="wrapper">
-                            CARD NUMBER:
+                            CARD NUMBER
                         </div>
                         <div class="wrapper">
                             <input formControlName="cardnumber" type="text" />
@@ -59,7 +59,10 @@
                         </div>
                     </div>
                     <div class="button">
-                        <button [disabled]="form.invalid" type="submit">BUY TICKETS</button>
+                        <input [disabled]="true" formControlName="movieID" value="{{movie.Id}}" type="text">
+                    </div>
+                    <div class="button">
+                        <input value="BUY TICKETS" type="submit">
                     </div>
                 </div>
             </form>

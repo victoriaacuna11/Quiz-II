@@ -14,7 +14,11 @@ import { InfoMovieComponent } from './components/info-movie/info-movie.component
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ReservaComponent } from './components/reserva/reserva.component';
 import {ReactiveFormsModule} from '@angular/forms';
-
+import {AngularFireModule} from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment.prod';
+import { AdminComponent } from './components/admin/admin.component';
+import { ReservaDetailsComponent } from './components/reserva-details/reserva-details.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +31,17 @@ import {ReactiveFormsModule} from '@angular/forms';
     AvailablePipe,
     NotAvailablePipe,
     InfoMovieComponent,
-    ReservaComponent
+    ReservaComponent,
+    AdminComponent,
+    ReservaDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
     ReactiveFormsModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,15 @@
 .title-wrapper{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
+    
+    h1{
+        font-size: 40px;
+        font-family: 'Staatliches', cursive;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100vw;
     height: 20vh;
-    background-color: black;
-    color: white;
+    // background-color: rgba(0,0,0,0.5);
+    color: red;
 }

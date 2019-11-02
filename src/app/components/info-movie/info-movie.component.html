@@ -51,7 +51,7 @@
                         <button  *ngIf="movie.ComingSoon" disabled>
                             COMING SOON
                         </button>
-                        <button  *ngIf="movie.Available && movie.seats>0">
+                        <button  [routerLink]="['/reserva', movie.Id]" *ngIf="movie.Available && movie.seats>0">
                             BUY TICKETS
                         </button>
                         <button  *ngIf="movie.Available && 1>movie.seats" disabled>
