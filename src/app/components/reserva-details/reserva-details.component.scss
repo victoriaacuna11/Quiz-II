@@ -1,0 +1,16 @@
+.reserva-wrapper{
+    display: grid;
+    grid-template-rows:repeat(6,1fr);
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid white;
+}
+.info-wrapper{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    color: white;
+}

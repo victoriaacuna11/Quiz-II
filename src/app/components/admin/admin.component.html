@@ -1,3 +1,14 @@
-<div *ngFor="let order of orders">
-    {{order.name}}
+<div class="order-title-wrapper">RESERVAS</div>
+<div class="orders-wrapper">
+    <div class="sep">
+
+    </div>
+    <div class="orders">
+        <div *ngFor="let order of orders">
+            <app-reserva-details [order]="order"></app-reserva-details>
+        </div>
+    </div>
+    <div class="sep">
+    
+    </div>
 </div>

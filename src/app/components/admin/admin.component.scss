@@ -1,0 +1,24 @@
+.orders-wrapper{
+    display: grid;
+    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    background-image: url("https://moneycrashers-sparkchargemedia.netdna-ssl.com/wp-content/uploads/2012/05/ways-save-movie-theater-tickets-1068x713.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.orders{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.order-title-wrapper{
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    font-size: 50px;
+    font-family: 'Staatliches', cursive;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
