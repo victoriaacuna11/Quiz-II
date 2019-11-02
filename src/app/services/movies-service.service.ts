@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Movie} from '../models/movie';
+import { Identifiers } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -275,6 +276,10 @@ export class MoviesServiceService {
     return this.movie;
   }
 
+  getMovieById(id:string){
+    return this.movies.find(movie => {return movie.Id===id;
+    })
+  }
   
 
 }

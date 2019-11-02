@@ -6,7 +6,7 @@ import { InfoMovieComponent } from './components/info-movie/info-movie.component
 
 const routes: Routes = [
   {path:'', component: HomeComponent}, 
-  {path: 'info', component: InfoMovieComponent}
+  {path: 'info/:id', component: InfoMovieComponent}
 ];
 
 @NgModule({
