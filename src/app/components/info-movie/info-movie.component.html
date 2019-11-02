@@ -47,6 +47,17 @@
                             {{movie.Awards}}
                         </div>
                     </div>
+                    <div class="button">
+                        <button  *ngIf="movie.ComingSoon" disabled>
+                            COMING SOON
+                        </button>
+                        <button  *ngIf="movie.Available && movie.seats>0">
+                            Reservar
+                        </button>
+                        <button  *ngIf="movie.Available && 1>movie.seats" disabled>
+                            NOT AVAILABLE
+                        </button>
+                    </div>
                 </div>
             </div>
     </div>

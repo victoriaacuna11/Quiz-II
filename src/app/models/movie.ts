@@ -18,4 +18,5 @@ export class Movie{
     Poster:string;
     Response?:string;
     Images:string[];
+    seats:number;
 }

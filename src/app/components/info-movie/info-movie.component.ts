@@ -11,7 +11,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./info-movie.component.scss']
 })
 export class InfoMovieComponent implements OnInit {
-  // @Input() 
+  
   movie:Movie;
 
   constructor(private _sv: MoviesServiceService, private _route: ActivatedRoute, 

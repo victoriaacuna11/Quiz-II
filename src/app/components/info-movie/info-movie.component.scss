@@ -51,7 +51,7 @@
     // background-color: black;
     // opacity: 0.8;
     display: grid;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.7fr 0.1fr;
  }
 
  .info-movie{
@@ -88,4 +88,25 @@
  }
  #plot{
      text-align: justify;
+ }
+ .button{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    //  height: 100%;
+    //  width: 100%;
+     button{
+         height: 80%;
+         width: 50%;
+         background: none;
+         color: white;
+         border: 1px solid white;
+         &:hover{
+            color: black;
+            background-color: white;
+            border: none;
+        //     height: 80%;
+        //  width: 50%;
+         }
+     }
  }
