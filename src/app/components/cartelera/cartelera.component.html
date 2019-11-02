@@ -1,7 +1,9 @@
 <div class="cartelera">
     <div class="sep"></div>
     <div class="movies-wrapper"> 
-
+        <div class="movie" *ngFor="let m of movies">
+            <app-movie [onemovie]="m"></app-movie>
+        </div>
     </div>
     <div class="sep"></div>
 </div>
