@@ -22,7 +22,7 @@ export class ReservaComponent implements OnInit {
   email:string;
   cardnumber:string;
   seats:number;
-  movieID:string;
+  movieID?:string;
 
   constructor(private _sv: MoviesServiceService, 
     private builder: FormBuilder, private _route: ActivatedRoute, 

@@ -19,6 +19,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment.prod';
 import { AdminComponent } from './components/admin/admin.component';
 import { ReservaDetailsComponent } from './components/reserva-details/reserva-details.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ReservaDetailsComponent } from './components/reserva-details/reserva-de
     InfoMovieComponent,
     ReservaComponent,
     AdminComponent,
-    ReservaDetailsComponent
+    ReservaDetailsComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

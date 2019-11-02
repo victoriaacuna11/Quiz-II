@@ -1,3 +1,4 @@
+<app-nav-bar></app-nav-bar>
 <div class="background">
     <div class="form-wrapper">
         <div class="title-wrapper">
@@ -61,7 +62,7 @@
                     <div class="button">
                         <input [disabled]="true" formControlName="movieID" value="{{movie.Id}}" type="text">
                     </div>
-                    <div class="button">
+                    <div class="button" routerLink="">
                         <input value="BUY TICKETS" type="submit">
                     </div>
                 </div>
